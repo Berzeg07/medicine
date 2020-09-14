@@ -3,7 +3,7 @@
     font-weight: 300;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/PlumbCondensed-Light/PlumbCondensed-Light.woff") format("woff"), url("../fonts/PlumbCondensed-Light/PlumbCondensed-Light.eot") format("eot"), url("../fonts/PlumbCondensed-Light/PlumbCondensed-Light.ttf") format("ttf");
+    src: url("../fonts/PlumbCondensed-Light/PlumbLightC.woff") format("woff"), url("../fonts/PlumbCondensed-Light/PlumbLightC.eot") format("eot"), url("../fonts/PlumbCondensed-Light/PlumbLightC.ttf") format("ttf");
 }
 
 @font-face {
@@ -11,7 +11,15 @@
     font-weight: 400;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/PlumbCondensed-Regular/PlumbCondensed-Regular.woff") format("woff"), url("../fonts/PlumbCondensed-Regular/PlumbCondensed-Regular.eot") format("eot"), url("../fonts/PlumbCondensed-Regular/PlumbCondensed-Regular.ttf") format("ttf");
+    src: url("../fonts/PlumbCondensed-Regular/PlumbC.woff") format("woff"), url("../fonts/PlumbCondensed-Regular/PlumbC.eot") format("eot"), url("../fonts/PlumbCondensed-Regular/PlumbC.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "PlumbC";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/PlumbMediumC/PlumbMediumC.woff") format("woff"), url("../fonts/PlumbMediumC/PlumbMediumC.eot") format("eot"), url("../fonts/PlumbMediumC/PlumbMediumC.ttf") format("ttf");
 }
 
 @font-face {
@@ -19,7 +27,15 @@
     font-weight: 600;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/PlumbCondensed-Bold/PlumbCondensed-Bold.woff") format("woff"), url("../fonts/PlumbCondensed-Bold/PlumbCondensed-Bold.eot") format("eot"), url("../fonts/PlumbCondensed-Bold/PlumbCondensed-Bold.ttf") format("ttf");
+    src: url("../fonts/PlumbCondensed-Bold/PlumbC-Bold.woff") format("woff"), url("../fonts/PlumbCondensed-Bold/PlumbC-Bold.eot") format("eot"), url("../fonts/PlumbCondensed-Bold/PlumbC-Bold.ttf") format("ttf");
+}
+
+@font-face {
+    font-family: "PlumbC";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/PlumbCondensed-Black/PlumbBlackC.woff") format("woff"), url("../fonts/PlumbCondensed-Black/PlumbBlackC.eot") format("eot"), url("../fonts/PlumbCondensed-Black/PlumbBlackC.ttf") format("ttf");
 }
 
 @font-face {
@@ -27,5 +43,5 @@
     font-weight: 800;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/PlumbCondensed-Black/PlumbCondensed-Black.woff") format("woff"), url("../fonts/PlumbCondensed-Black/PlumbCondensed-Black.eot") format("eot"), url("../fonts/PlumbCondensed-Black/PlumbCondensed-Black.ttf") format("ttf");
+    src: url("../fonts/PlumbBlackSoftC/PlumbBlackSoftC.woff") format("woff"), url("../fonts/PlumbBlackSoftC/PlumbBlackSoftC.eot") format("eot"), url("../fonts/PlumbBlackSoftC/PlumbBlackSoftC.ttf") format("ttf");
 }
