@@ -11,10 +11,33 @@ $(document).ready(function () {
         document.location.href = link;
     });
 
-
-
-
-
+    var advSlider = new Swiper('.adv-slider', {
+        slidesPerView: 5,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            499: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            991: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+            },
+            1279: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            }
+        },
+    });
 
     var refSlider = undefined;
 

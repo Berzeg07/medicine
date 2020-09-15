@@ -215,6 +215,7 @@
     top: 101%;
     background: white;
     display: none;
+    z-index: 20;
 
     li {
         position: relative;
@@ -586,6 +587,12 @@
     }
 }
 
+.time-block_top {
+    @media (min-width: 1600px) {
+        justify-content: flex-start;
+    }
+}
+
 .main-title {
     color: #374957;
     font-size: 32px;
@@ -596,6 +603,14 @@
         text-align: center;
         font-size: 22px;
     }
+}
+
+.main-title_center {
+    text-align: center;
+}
+
+.advantages__title {
+    margin-bottom: 45px;
 }
 
 .time-block__article {
@@ -680,6 +695,10 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
+    @media (max-width: 1279px) {
+        overflow: visible;
+    }
+
     @media (min-width: 1600px) {
         padding-top: 18px;
     }
@@ -720,8 +739,7 @@
         justify-content: center;
         height: 477px;
 
-        @media (max-width: 1279px) {
-            width: auto;
+        @media (min-width: 992px) and (max-width: 1279px) {
             width: 32%;
         }
 
@@ -891,39 +909,44 @@
     }
 }
 
+
 .top-main__info {
     @media (min-width: 1280px) {
         display: flex;
         align-items: center;
+    }
+}
 
-        li {
-            &:first-child {
-                width: 60%;
-            }
+.top-main__info>li {
+    @media (min-width: 1280px) {
 
-            &:last-child {
-                width: 40%;
-            }
+        &:first-child {
+            width: 60%;
+            margin-right: 15px;
         }
+
+        &:last-child {
+            width: 40%;
+        }
+
     }
 
     @media (min-width: 1900px) {
-        li {
-            &:first-child {
-                width: 47%;
-                margin-right: 15px;
-            }
+        &:first-child {
+            width: 47%;
+        }
 
-            &:last-child {
-                width: 47%;
-            }
+        &:last-child {
+            width: 47%;
         }
     }
 }
 
-.time-block__count {
-    @media (min-width: 1280px) and (max-width: 1599px) {
+.time-block_top .time-block__count {
+    @media (min-width: 1280px) and (max-width: 1899px) {
         font-size: 24px;
+        text-align: center;
+        line-height: 14px;
 
         span {
             font-size: 16px;
@@ -932,7 +955,47 @@
 }
 
 .top-main__title {
-    @media (min-width: 1280px) and (max-width: 1599px) {
+    @media (min-width: 1280px) and (max-width: 1899px) {
         font-size: 18px;
     }
+}
+
+.cont-txt {
+    font-size: 18px;
+    color: #4B4A55;
+
+    p {
+        margin-bottom: 25px;
+    }
+}
+
+.about-ref {
+    margin-bottom: 45px;
+}
+
+.advantages {
+    background: #F8FAFF;
+    padding-top: 38px;
+    padding-bottom: 45px;
+}
+
+.adv-slider {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.adv-slider__item {
+    text-align: center;
+}
+
+.adv-slider__img {
+    margin-bottom: 36px;
+}
+
+.adv-slider__article {
+    color: #374957;
+    font-size: 22px;
+    font-weight: 500;
 }
