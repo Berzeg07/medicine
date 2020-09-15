@@ -185,8 +185,8 @@
     h2.main-title.main-title_center Оформить медсправку водительскую 003-В/у
 
     .tab-links
-        a(href="#tab-1") Категория A, B
-        a(href="#tab-1") Категория C, D, E
+        a(href="#tab-1").tab-links__btn Категория A, B
+        a(href="#tab-2").tab-links__btn Категория C, D, E
 
     .tabs-wrap
         .tab-block#tab-1
@@ -195,7 +195,7 @@
                     .tab-block__img
                         img(src="img/man.jpg")
 
-                        ul.time-block
+                        ul.time-block.tab-block__time
                             li
                                 .time-block__img
                                     img(src="img/time.png")
@@ -209,7 +209,7 @@
                     .tab-block__info
                         .tab-block__title Справки для категории А, А1, В, В1, ВЕ, М, В 003в/у
 
-                        ul.ref-icons
+                        ul.ref-icons.tab-block__icons
                             li
                                 img(src="img/spr-5.png")
                             li
@@ -217,9 +217,11 @@
 
                         .sub-title Стоимость комиссии:
 
-                        .ref-price
+                        .ref-price.tab-block__price
                             |1200 
                             span руб.
+
+                        .sub-title Выдается сроком на один год
 
                 .tab-block__right
                     .column
@@ -230,7 +232,7 @@
                             li Справка от нарколога и психиатра*
 
                         .ref-quote 
-                            |В случае прохождения данных специалистов в наших медцентрах справка не требуются.
+                            |* В случае прохождения данных специалистов в наших медцентрах справка не требуются.
 
                     .column
                         .tab-block__sub-title Обследование у каких врачей нужно пройти:
@@ -241,7 +243,6 @@
                             li психиатр — обязательно;
                             li психиатр-нарколог — обязательно;
                             li невролог — только если направит терапевт.
-
 
             .tab-block__bottom
                 .column
@@ -255,7 +256,73 @@
                         li
                             a(href="tel:74956496451").phone-block__call +7 495 649-64-51
                             .phone-block__article Звоните! Онлайн запись на комиссию
+        .tab-block#tab-2
+            .tab-block__top
+                .tab-block__left
+                    .tab-block__img
+                        img(src="img/man.jpg")
 
+                        ul.time-block.tab-block__time
+                            li
+                                .time-block__img
+                                    img(src="img/time.png")
+
+                                .time-block__article Время прохождения<br> комиссии
+                            li
+                                .time-block__count
+                                    |30
+                                    span мин.
+
+                    .tab-block__info
+                        .tab-block__title Справки для категории А, А1, В, В1, ВЕ, М, В 003в/у
+
+                        ul.ref-icons.tab-block__icons
+                            li
+                                img(src="img/spr-5.png")
+                            li
+                                img(src="img/spr-6.png")
+
+                        .sub-title Стоимость комиссии:
+
+                        .ref-price.tab-block__price
+                            |1200 
+                            span руб.
+
+                        .sub-title Выдается сроком на один год
+
+                .tab-block__right
+                    .column
+                        .tab-block__sub-title Необходимые документы:
+
+                        ul.ref-list
+                            li Паспорт
+                            li Справка от нарколога и психиатра*
+
+                        .ref-quote 
+                            |* В случае прохождения данных специалистов в наших медцентрах справка не требуются.
+
+                    .column
+                        .tab-block__sub-title Обследование у каких врачей нужно пройти:
+
+                        ul.ref-list
+                            li терапевт или врач общей практики (семейный врач) — обязательно;
+                            li офтальмолог — обязательно;
+                            li психиатр — обязательно;
+                            li психиатр-нарколог — обязательно;
+                            li невролог — только если направит терапевт.
+
+            .tab-block__bottom
+                .column
+                    button(type="submit").tab-block__btn Записаться на комиссию
+
+                .column
+                    ul.phone-block
+                        li
+                            .phone-block__img
+                                img(src="img/docs.jpg")
+                        li
+                            a(href="tel:74956496451").phone-block__call +7 495 649-64-51
+                            .phone-block__article Звоните! Онлайн запись на комиссию
 
 
 

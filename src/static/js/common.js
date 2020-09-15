@@ -68,10 +68,18 @@ $(document).ready(function () {
         } else if (screenWidth < 1280 && refSlider != undefined) {
             aboutSliser.destroy();
             aboutSliser = undefined;
-            // $('.scrollbar-slider__wrapper').removeAttr('style');
-            // $('.scrollbar-slider__slide').removeAttr('style');
         }
     }
 
     initAction();
+
+    $('.tab-links a').click(function (e) {
+        e.preventDefault();
+        $('.tab-links__btn').removeClass('is-active');
+        $(this).addClass('is-active');
+        var tab = $(this).attr('href');
+        $('.tab-block').not(tab).css({ 'display': 'none' });
+        $(tab).fadeIn(400);
+    });
+    $('.tab-links a:first-child').click();
 });
