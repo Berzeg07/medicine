@@ -433,7 +433,98 @@
                 .recall-block__img
                     img(src="img/blank.png")
 
+.terms.container
+    h2.main-title.main-title_center.terms__title Мед справка водительская 2020 для замены прав нужна для:
 
+    .terms-slider.swiper-container
+        .swiper-wrapper
+            .swiper-slide
+                .terms-slider__item
+                    .terms-slider__img
+                        img(src="img/sl-1.jpg")
 
+                    .terms-slider__title Для замены водительского удостоверения
+
+                    .terms-slider__article Водительская медкомиссия для ГИБДД
+
+            .swiper-slide
+                .terms-slider__item
+                    .terms-slider__img
+                        img(src="img/sl-2.jpg")
+
+                    .terms-slider__title Для водительских прав
+
+                    .terms-slider__article При восстановлении прав после лишения
+
+            .swiper-slide
+                .terms-slider__item
+                    .terms-slider__img
+                        img(src="img/sl-3.jpg")
+
+                    .terms-slider__title Медкомиссия водителей
+
+                    .terms-slider__article Для получения справки нового образца по форме 003-в/у
+
+            .swiper-slide
+                .terms-slider__item
+                    .terms-slider__img
+                        img(src="img/sl-4.jpg")
+
+                    .terms-slider__title Медсправка для получения прав
+
+                    .terms-slider__article В гаи с наркологом и психиатром
+
+        .swiper-button-next
+        .swiper-button-prev
+
+.reference-info.container
+    h2.main-title Медсправка водительская 003-В/у
+
+    .cont-txt
+        p Если Вам нужно оформить водительскую справку (форма 003-В/у) для ГИБДД, но нет возможности получить заключение нарколога и психиатра в диспансере по месту жительства, то обращайтесь в наши клиники. У нас Вы можете пройти полный медицинский осмотр, который включает обследования всех необходимых врачей, и получить официальную водительскую справку в одном месте.
+
+.form-block
+    h2.main-title.main-title_center Отправьте заявку - медсправка водительская через 30 минут!
+
+    .form-block__inner.container
+        form.ref-form(action="#" method="POST")
+            .column
+                ul.ref-form__list
+                    li
+                        .ref-form__sub-title Введите имя:
+                        input(type="text" placeholder="Имя").inp
+                    li
+                        .ref-form__sub-title Контактный телефон::
+                        input(type="text" placeholder="+7 ___ ___-__-__").inp
+                    li
+                        .ref-form__sub-title Выберите метро:
+                        .select.ref-form__select
+                            select
+                                option Братиславская
+                                option Тест 1
+                                option Тест 2
+                    li
+                        .ref-form__sub-title Выберите нужную медсправку:
+                        .select.ref-form__select
+                            select
+                                option Справки в ГИБДД, для категории С, D, E с электроэнцефалограммой + нарколог и психиатр 003в/у
+                                option Тест 1
+                                option Тест 2
+
+            .column
+                button(type="submit").ref-form__btn 
+                    |Получить медсправку 
+                    span для ГИБДД
+
+                .check-block
+                    input(type="checkbox" checked)#check.checkbox
+                    label(for="check").check-label 
+                        |Я принимаю условия 
+                        a(href="#") передачи информации
+
+.map-block
+    h2.main-title.main-title_center Филиалы на карте
+
+    .map#map
 
 

@@ -66,8 +66,8 @@ $(document).ready(function () {
             });
 
         } else if (screenWidth < 1280 && refSlider != undefined) {
-            aboutSliser.destroy();
-            aboutSliser = undefined;
+            refSlider.destroy();
+            refSlider = undefined;
         }
     }
 
@@ -82,5 +82,100 @@ $(document).ready(function () {
         $(tab).fadeIn(400);
     });
     $('.tab-links a:first-child').click();
+
+    var termSlider = undefined;
+
+    function initTermAction() {
+        var screenWidth = $(window).width();
+        if (screenWidth > 991 && termSlider == undefined) {
+
+            var termSlider = new Swiper('.terms-slider', {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints: {
+                    1279: {
+                        slidesPerView: 2,
+                        spaceBetween: 30,
+                    }
+                },
+            });
+
+        } else if (screenWidth < 992 && termSlider != undefined) {
+            termSlider.destroy();
+            termSlider = undefined;
+        }
+    }
+
+    initTermAction();
+
+    ymaps.ready(init);
+
+    function init() {
+        var center = [55.59113656911934, 37.88662649999996];
+        var center2 = [55.744460, 37.533355];
+        var center3 = [55.765350, 37.757137];
+
+
+        var myMap = new ymaps.Map('map', {
+            center: center,
+            controls: [],
+            zoom: 9
+        }, {
+            searchControlProvider: 'yandex#search'
+
+        });
+
+        myMap.behaviors.disable('scrollZoom');
+
+        var myPlacemark = new ymaps.Placemark(center, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'улица Ивана Франко, 4к4',
+            hintContent: 'улица Ивана Франко, 4к4'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-icon.png',
+            iconImageSize: [40, 40]
+            // preset: 'twirl#violetIcon'
+        });
+
+        var myPlacemark2 = new ymaps.Placemark(center2, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'улица Ивана Франко, 4к4',
+            hintContent: 'улица Ивана Франко, 4к4'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-icon.png',
+            iconImageSize: [40, 40]
+            // preset: 'twirl#violetIcon'
+        });
+
+        var myPlacemark3 = new ymaps.Placemark(center3, {
+            // Свойства.
+            // Содержимое иконки, балуна и хинта.
+            balloonContent: 'улица Ивана Франко, 4к4',
+            hintContent: 'улица Ивана Франко, 4к4'
+        }, {
+            // Опции.
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-icon.png',
+            iconImageSize: [40, 40]
+            // preset: 'twirl#violetIcon'
+        });
+
+        myMap.geoObjects.add(myPlacemark);
+        myMap.geoObjects.add(myPlacemark2);
+        myMap.geoObjects.add(myPlacemark3);
+
+    }
+
 
 });
