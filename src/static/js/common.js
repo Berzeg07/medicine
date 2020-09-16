@@ -82,4 +82,5 @@ $(document).ready(function () {
         $(tab).fadeIn(400);
     });
     $('.tab-links a:first-child').click();
+
 });
