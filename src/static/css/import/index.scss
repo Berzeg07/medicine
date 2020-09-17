@@ -1454,12 +1454,42 @@
 }
 
 .recall-block {
-    background: rgba(231, 56, 127, 0.9);
     padding: 16px 0px;
     position: relative;
 
+    .container {
+        position: relative;
+        z-index: 10;
+
+        @media (min-width: 1900px) {
+            padding-left: 200px;
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(231, 56, 127, 0.9);
+        z-index: 1;
+    }
+
     @media (min-width: 768px) and (max-width: 1279px) {
         padding-bottom: 0;
+    }
+}
+
+.car-img {
+    position: absolute;
+    left: 120px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: 1899px) {
+        display: none;
     }
 }
 
